@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bg_white">#Ffffff</color>
+    <color name="lightgrey">#81999E</color>
+    <color name="dark_orange">#933941</color>
+    <color name="create_account_orange_dark">#8E3F42</color>
+    <color name="create_account_orange_light">#9A5A5B</color>"
 </resources>
