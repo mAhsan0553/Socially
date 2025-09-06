@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/from"
-        android:text="from"
+        android:text="@string/from"
         android:textSize="15dp"
         android:layout_marginBottom="75dp"
         android:layout_alignParentBottom="true"
@@ -41,7 +41,7 @@
         android:id="@+id/SMD"
         android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
-        android:text="SMD"
+        android:text="@string/smd"
         android:textSize="45dp"
         android:textColor="@color/dark_orange"
         android:layout_marginBottom="25dp">
