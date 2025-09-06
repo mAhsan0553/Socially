@@ -83,7 +83,7 @@
         android:layout_marginTop="0dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="30dp"
-        android:hint="@string/username"
+        android:hint="tejpati064"
         android:textColorHint="@color/bg_white"
         android:backgroundTint="@color/bg_white"
         android:textSize="14dp">
@@ -114,7 +114,7 @@
         android:layout_marginTop="0dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="30dp"
-        android:hint="@string/first_name"
+        android:hint="Tejas"
         android:textColorHint="@color/bg_white"
         android:backgroundTint="@color/bg_white"
         android:textSize="14dp">
@@ -142,7 +142,7 @@
         android:layout_marginTop="0dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="30dp"
-        android:hint="@string/your_last_name"
+        android:hint="Patil"
         android:textColorHint="@color/bg_white"
         android:backgroundTint="@color/bg_white"
         android:textSize="14dp">
@@ -171,7 +171,7 @@
         android:layout_marginTop="0dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="30dp"
-        android:hint="@string/date_of_birth"
+        android:hint="@string/_02_09_2003"
         android:textColorHint="@color/bg_white"
         android:backgroundTint="@color/bg_white"
         android:textSize="14dp">
@@ -233,12 +233,10 @@
             android:id="@+id/password_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_password"
-            android:textColorHint="@color/bg_white"
+            android:text="@string/_00000000"
             android:textColor="@color/bg_white"
             android:inputType="textPassword"
             android:backgroundTint="@color/bg_white"
-
             android:textSize="14dp"
             android:paddingEnd="40dp">
 
@@ -273,5 +271,17 @@
 
 
     </Button>
+
+    <ImageView
+        android:id="@+id/bottombar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottombar"
+        android:background="@color/bg_white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp">
+
+    </ImageView>
 
 </RelativeLayout>
