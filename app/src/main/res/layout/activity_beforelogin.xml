@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".beforeloginActivity"
+    android:background="@color/bg_white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Socially"
+        android:text="@string/socially"
+        android:textSize="45dp"
+        android:fontFamily=""
+        android:textColor="@color/create_account_orange_light"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/image"
+        android:layout_marginBottom="50dp"
+        >
+
+    </TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        app:civ_border_color="@color/black"
+        android:src="@drawable/img_2"
+        app:civ_border_width="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/usernameunderimage">
+
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameunderimage"
+        android:text="@string/jacob_w"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/create_account_btn"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:text="@string/log_in"
+        android:textSize="16dp"
+        android:textColor="@color/bg_white"
+        android:backgroundTint="@color/create_account_orange_light"
+        android:layout_below="@id/usernameunderimage"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="15dp"
+        android:enabled="false"
+        app:cornerRadius="10dp">
+
+
+    </Button>
+
+    <TextView
+        android:id="@+id/switch_account_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switch_accounts"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/create_account_orange_dark"
+        android:backgroundTint="@color/bg_white"
+        android:layout_below="@id/create_account_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        >
+
+    </TextView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/white_line"
+        android:src="@drawable/white_line"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="80dp"
+
+        >
+
+    </ImageView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dont_have_an_account"
+        android:text="@string/don_t_have_an_account"
+        android:textSize="16dp"
+        android:textColor="@color/create_account_orange_light"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="100dp"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_up"
+        android:text="Sign up."
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/create_account_orange_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_toRightOf="@+id/dont_have_an_account"
+
+        >
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottombar"
+        android:src="@drawable/line"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp">
+
+    </ImageView>
+
+
+
+
+
+</RelativeLayout>
