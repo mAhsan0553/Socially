@@ -8,7 +8,6 @@
     tools:context=".beforeloginActivity"
     android:background="@color/bg_white">
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,7 +51,7 @@
     </TextView>
 
     <Button
-        android:id="@+id/create_account_btn"
+        android:id="@+id/log_in"
         android:layout_width="match_parent"
         android:layout_height="68dp"
         android:text="@string/log_in"
@@ -63,7 +62,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginEnd="50dp"
         android:layout_marginTop="15dp"
-        android:enabled="false"
+        android:enabled="true"
         app:cornerRadius="10dp">
 
 
@@ -78,7 +77,7 @@
         android:textStyle="bold"
         android:textColor="@color/create_account_orange_dark"
         android:backgroundTint="@color/bg_white"
-        android:layout_below="@id/create_account_btn"
+        android:layout_below="@+id/log_in"
         android:layout_centerInParent="true"
         android:layout_marginTop="15dp"
         >
@@ -93,9 +92,9 @@
         android:src="@drawable/white_line"
         android:layout_marginEnd="0dp"
         android:layout_marginStart="0dp"
-        android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="80dp"
+        android:layout_above="@+id/signupline"
+        android:layout_marginBottom="15dp"
 
         >
 
@@ -103,39 +102,47 @@
 
 
 
-    <TextView
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/dont_have_an_account"
-        android:text="@string/don_t_have_an_account"
-        android:textSize="16dp"
-        android:textColor="@color/create_account_orange_light"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="40dp"
-        android:layout_marginLeft="100dp"
+        android:id="@+id/signupline"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/bottombar"
+       android:layout_marginBottom="30dp"
         >
-    </TextView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/sign_up"
-        android:text="Sign up."
-        android:textSize="16dp"
-        android:textStyle="bold"
-        android:textColor="@color/create_account_orange_dark"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="40dp"
-        android:layout_toRightOf="@+id/dont_have_an_account"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dont_have_an_account"
+            android:text="@string/don_t_have_an_account"
+            android:textSize="16dp"
+            android:textColor="@color/create_account_orange_light"
+            >
+        </TextView>
 
-        >
-    </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign_up"
+            android:text="Sign up."
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/create_account_orange_dark"
+            android:layout_toRightOf="@+id/dont_have_an_account"
+
+            >
+        </TextView>
+
+    </RelativeLayout>
+
+
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bottombar"
-        android:src="@drawable/line"
+        android:src="@drawable/line_new"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="5dp">
