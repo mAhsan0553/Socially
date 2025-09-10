@@ -42,36 +42,34 @@
         android:layout_above="@+id/password_edittext"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="12dp"
         android:hint="@string/asad_khasanov"
         android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textSize="16sp"
-        android:textStyle="bold"
         android:inputType="textEmailAddress"
-        android:drawablePadding="8dp"
         android:padding="12dp"
-        android:backgroundTint="@color/black"
-        android:singleLine="true"
-        >
-
+        android:background="@android:drawable/edit_text"
+        android:textStyle="normal"
+        android:layout_marginBottom="12dp">
 
     </EditText>
 
     <EditText
         android:id="@+id/password_edittext"
+        android:layout_above="@+id/forgot_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/forgot_password"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:hint="@string/password"
+        android:hint="Password"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:inputType="textPassword"
-        >
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textStyle="normal">
 
     </EditText>
-
 
     <TextView
         android:id="@+id/forgot_password"
