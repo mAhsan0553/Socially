@@ -30,6 +30,13 @@ class beforeloginActivity : AppCompatActivity() {
             finish()
         }
 
+        var switch_account = findViewById<TextView>(R.id.switch_account_btn)
+        switch_account.setOnClickListener {
+            var intent = Intent(this, loginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
 
     }
 }

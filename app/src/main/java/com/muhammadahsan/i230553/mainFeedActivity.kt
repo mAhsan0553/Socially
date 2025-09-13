@@ -17,9 +17,22 @@ class mainFeedActivity : AppCompatActivity() {
 
 
         var story_btn = findViewById<ImageView>(R.id.add_story_icon)
-        story_btn.setOnClickListener {
-            var intent = Intent(this, loginActivity::class.java)
+        story_btn.setOnClickListener{
+            //create an implicit intent to open the camera app
+            var intent = Intent("android.media.action.IMAGE_CAPTURE")
             startActivity(intent)
+        }
+
+        var search_btn = findViewById<ImageView>(R.id.search_button)
+        search_btn.setOnClickListener {
+            var intent = Intent(this, SearchPageActivity::class.java)
+            startActivity(intent)
+        }
+        var likes = findViewById<ImageView>(R.id.likes)
+        likes.setOnClickListener {
+            var intent = Intent(this, YouNotificationsActivity::class.java)
+            startActivity(intent)
+
         }
 
     }

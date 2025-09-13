@@ -1,10 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchPageActivity">
+    tools:context=".SearchPageActivity"
+    android:background="@color/bg_white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation_buttons"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white"
+        android:layout_marginBottom="0dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/white_line3"
+            android:src="@drawable/white_line"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="0dp"
+            android:layout_alignParentTop="true"
+            >
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_navigation_buttons_container"
+            android:layout_below="@+id/white_line3"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/home_button"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/home_not_filled"
+
+                >
+
+            </ImageView>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/search_button"
+                android:layout_toRightOf="@+id/home_button"
+                android:src="@drawable/search_icon"
+                android:layout_marginLeft="40dp"
+
+                >
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:id="@+id/add_post_btn"
+                android:layout_centerInParent="true"
+                android:src="@drawable/add_post"
+
+                >
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/likes"
+                android:layout_toLeftOf="@+id/my_account_container"
+                android:src="@drawable/likes"
+                android:layout_marginRight="40dp"
+                >
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/my_account_container"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="50dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+                <ImageView
+                    android:id="@+id/my_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/my_account"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
