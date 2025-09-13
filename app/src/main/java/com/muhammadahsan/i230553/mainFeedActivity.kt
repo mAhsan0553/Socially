@@ -43,5 +43,11 @@ class mainFeedActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        var messages_btn = findViewById<ImageView>(R.id.messages)
+        messages_btn.setOnClickListener {
+            var intent = Intent(this, MessagesActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

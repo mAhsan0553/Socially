@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I230553">
         <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MessagesActivity"
+            android:exported="false" />
+        <activity
             android:name=".FollowingNotificationActivity"
             android:exported="false" />
         <activity

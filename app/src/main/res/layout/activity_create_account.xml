@@ -69,7 +69,9 @@
         android:layout_marginStart="20dp"
         android:text="@string/username"
         android:textColor="@color/bg_white"
-        android:textSize="17dp"></TextView>
+        android:textSize="17dp">
+
+    </TextView>
 
 
 
