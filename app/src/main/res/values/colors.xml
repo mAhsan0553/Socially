@@ -7,5 +7,8 @@
     <color name="dark_orange">#933941</color>
     <color name="create_account_orange_dark">#8E3F42</color>
     <color name="create_account_orange_light">#9A5A5B</color>
+    <color name="story_ring_ender">#601594</color>
+    <color name="story_ring_starter">#ECA949</color>
     <color name="lighter_orange">#C59797</color>
+    <color name="light_grey">#A2A2A2</color>
 </resources>

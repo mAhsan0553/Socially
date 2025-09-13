@@ -23,11 +23,13 @@ class beforeloginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        var login = findViewById<TextView>(R.id.switch_account_btn)
+        var login = findViewById<Button>(R.id.log_in)
         login.setOnClickListener {
-            var intent = Intent(this, loginActivity::class.java)
+            var intent = Intent(this, mainFeedActivity::class.java)
             startActivity(intent)
+            finish()
         }
+
 
     }
 }

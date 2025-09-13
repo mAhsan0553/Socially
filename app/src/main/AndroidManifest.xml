@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I230553">
         <activity
+            android:name=".SearchPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainFeedActivity"
+            android:exported="false" />
+        <activity
             android:name=".loginActivity"
             android:exported="false" />
         <activity

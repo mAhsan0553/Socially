@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/signupline"
         android:layout_centerInParent="true"
-        android:layout_above="@+id/bottombar"
+        android:layout_alignParentBottom="true"
        android:layout_marginBottom="30dp"
         >
 
@@ -138,16 +138,7 @@
 
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/bottombar"
-        android:src="@drawable/line_new"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="5dp">
 
-    </ImageView>
 
 
 

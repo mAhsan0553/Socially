@@ -24,6 +24,11 @@ class loginActivity : AppCompatActivity() {
             var intent = Intent(this, CreateAccountActivity::class.java)
             startActivity(intent)
         }
+        var log_in = findViewById<TextView>(R.id.log_in)
+        log_in.setOnClickListener {
+            var intent = Intent(this, mainFeedActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
