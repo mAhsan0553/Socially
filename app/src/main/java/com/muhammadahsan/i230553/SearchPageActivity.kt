@@ -2,6 +2,7 @@ package com.muhammadahsan.i230553
 
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -33,6 +34,12 @@ class SearchPageActivity : AppCompatActivity() {
             //create an implicit intent to open the gallery app
             var intent = android.content.Intent("android.intent.action.PICK")
             intent.type = "image/*"
+            startActivity(intent)
+        }
+
+        var hashtags = findViewById<LinearLayout>(R.id.search_bar_layout_inner)
+        hashtags.setOnClickListener {
+            var intent = android.content.Intent(this, HashtagPageActivity::class.java)
             startActivity(intent)
         }
 

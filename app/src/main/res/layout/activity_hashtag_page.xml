@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_white"
+    tools:context=".HashtagPageActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_bar_container"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/search_container"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bar_background"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/search_icon"
+                android:src="@drawable/search_icon"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </ImageView>
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@id/search_container"
+                android:textSize="12dp"
+                android:text="@string/internshala"
+                android:textColor="@color/black"
+                android:layout_marginLeft="35dp"
+                android:backgroundTint="@color/very_light_grey"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/transparent"
+                >
+
+            </EditText>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/cross"
+                android:src="@drawable/img_30"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:text="Clear"
+            android:textColor="@color/create_account_orange_dark"
+            android:textSize="20sp"
+            android:layout_marginTop="6dp"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/search_bar_container"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/tab_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="Top"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tab_accounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="45dp"
+            android:layout_toEndOf="@id/tab_top"
+            android:text="Accounts"
+            android:textColor="#AAAAAA"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tab_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="45dp"
+            android:layout_toEndOf="@id/tab_accounts"
+            android:text="Tags"
+            android:textColor="#AAAAAA"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tab_places"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="45dp"
+            android:layout_toEndOf="@id/tab_tags"
+            android:text="Places"
+            android:textColor="#AAAAAA"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@id/tab_top"
+            android:background="#333333" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/main_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tab_container"
+        android:background="#E5E5E5" />
+
+    <RelativeLayout
+        android:id="@+id/account_result"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@id/main_divider"
+        android:layout_marginTop="8dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@android:color/transparent"
+            app:civ_border_width="0dp"
+            app:civ_circle_background_color="#1E88E5" />
+
+        <TextView
+            android:id="@+id/profile_initials"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="IS"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/profile_image"
+            android:text="internshala"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/account_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_name"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/profile_image"
+            android:text="internshala"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hashtag_result_1"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@id/account_result"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/hashtag_circle_1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/hashtag_symbol_1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle_border"
+            android:gravity="center"
+            android:text="#"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hashtag_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/hashtag_circle_1"
+            android:text="#internshala"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hashtag_count_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hashtag_name_1"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/hashtag_circle_1"
+            android:text="1000+ post"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <!-- Hashtag Result 2 -->
+    <RelativeLayout
+        android:id="@+id/hashtag_result_2"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@id/hashtag_result_1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/hashtag_circle_2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/hashtag_symbol_2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle_border"
+
+            android:gravity="center"
+            android:text="#"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hashtag_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/hashtag_circle_2"
+            android:text="#internshala_nomoretheory_challange"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hashtag_count_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hashtag_name_2"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/hashtag_circle_2"
+            android:text="500+ post"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <!-- Hashtag Result 3 -->
+    <RelativeLayout
+        android:id="@+id/hashtag_result_3"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@id/hashtag_result_2"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/hashtag_circle_3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="#F5F5F5" />
+
+        <TextView
+            android:id="@+id/hashtag_symbol_3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle_border"
+            android:gravity="center"
+            android:text="#"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hashtag_name_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/hashtag_circle_3"
+            android:layout_marginTop="12dp"
+            android:text="Internshala"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hashtag_count_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hashtag_name_3"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/hashtag_circle_3"
+            android:text="Internshala, B-610, Untech Business"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <!-- Hashtag Result 4 -->
+    <RelativeLayout
+        android:id="@+id/hashtag_result_4"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@id/hashtag_result_3"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/hashtag_circle_4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="#F5F5F5" />
+
+        <TextView
+            android:id="@+id/hashtag_symbol_4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="#"
+            android:background="@drawable/circle_border"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hashtag_name_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/hashtag_circle_4"
+            android:layout_marginTop="12dp"
+            android:text="internshalastudentpartner"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hashtag_count_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hashtag_name_4"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/hashtag_circle_4"
+            android:text="500+ post"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <!-- Hashtag Result 5 -->
+    <RelativeLayout
+        android:id="@+id/hashtag_result_5"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@id/hashtag_result_4"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/hashtag_circle_5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="#F5F5F5" />
+
+        <TextView
+            android:id="@+id/hashtag_symbol_5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="#"
+            android:background="@drawable/circle_border"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hashtag_name_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/hashtag_circle_5"
+            android:layout_marginTop="12dp"
+            android:text="internshalaincampus"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hashtag_count_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hashtag_name_5"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/hashtag_circle_5"
+            android:text="100+ post"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
