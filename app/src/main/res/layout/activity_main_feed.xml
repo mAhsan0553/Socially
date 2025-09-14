@@ -12,15 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/upper_icons_container"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/upper_buttons_bar"
-            android:src="@drawable/img_3">
 
-        </ImageView>
+
+
 
         <ImageView
             android:layout_width="32dp"
@@ -44,6 +42,19 @@
             android:textStyle="bold">
 
         </TextView>
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/notifications"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img_32"
+            android:layout_marginRight="50dp">
+
+        </ImageView>
+
         
         <ImageView
             android:layout_width="26dp"
@@ -616,7 +627,9 @@
 
                 <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="375dp"
+                        android:layout_height="360dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
                         android:id="@+id/joahua_ki_uploaded_pic"
                         android:src="@drawable/joshua_ki_posted_pic"
                         android:layout_below="@+id/joshua_ki_post_name_n_id"
@@ -927,7 +940,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="375dp"
+                    android:layout_height="360dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:id="@+id/joahua_ki_uploaded_pic2"
                     android:src="@drawable/joshua_ki_posted_pic"
                     android:layout_below="@+id/joshua_ki_post_name_n_id2"

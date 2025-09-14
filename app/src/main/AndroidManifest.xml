@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I230553">
         <activity
+            android:name=".FriendProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePageActivity"
+            android:exported="false" />
+        <activity
             android:name=".CallActivity"
             android:exported="false" />
         <activity

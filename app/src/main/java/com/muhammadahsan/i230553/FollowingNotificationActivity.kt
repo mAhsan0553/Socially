@@ -39,5 +39,13 @@ class FollowingNotificationActivity : AppCompatActivity() {
             intent.type = "image/*"
             startActivity(intent)
         }
+
+        var profile = findViewById<android.widget.ImageView>(R.id.my_account)
+        profile.setOnClickListener {
+            var intent = android.content.Intent(this, ProfilePageActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 }
