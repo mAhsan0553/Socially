@@ -70,5 +70,12 @@ class mainFeedActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        var mystory = findViewById<RelativeLayout>(R.id.stories)
+        mystory.setOnClickListener {
+            var intent = android.content.Intent(this, StoryAvtivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }
