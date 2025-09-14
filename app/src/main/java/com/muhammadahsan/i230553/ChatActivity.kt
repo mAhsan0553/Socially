@@ -12,7 +12,20 @@ class ChatActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_chat)
 
+        var video_call = findViewById<android.widget.ImageView>(R.id.video_call)
+        var back_arrow = findViewById<android.widget.ImageView>(R.id.back_arrow)
 
+
+
+
+        back_arrow.setOnClickListener {
+            finish()
+        }
+
+
+        video_call.setOnClickListener {
+            startActivity(android.content.Intent(this, CallActivity::class.java))
+        }
 
 
     }
