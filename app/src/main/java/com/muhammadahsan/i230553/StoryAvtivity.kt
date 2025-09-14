@@ -24,5 +24,6 @@ class StoryAvtivity : AppCompatActivity() {
             startActivity(android.content.Intent(this, FinalStoryActivity::class.java))
         }
 
+
     }
 }
