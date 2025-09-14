@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.RelativeLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -43,6 +44,12 @@ class mainFeedActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        var profile = findViewById<android.widget.ImageView>(R.id.my_account)
+        profile.setOnClickListener {
+            var intent = android.content.Intent(this, ProfilePageActivity::class.java)
+            startActivity(intent)
+        }
+
         var messages_btn = findViewById<ImageView>(R.id.messages)
         messages_btn.setOnClickListener {
             var intent = Intent(this, MessagesActivity::class.java)
@@ -50,9 +57,16 @@ class mainFeedActivity : AppCompatActivity() {
         }
 
 
-        var profile = findViewById<android.widget.ImageView>(R.id.my_account)
-        profile.setOnClickListener {
-            var intent = android.content.Intent(this, ProfilePageActivity::class.java)
+
+        var friendprofile = findViewById<RelativeLayout>(R.id.joshua_ki_post_name_n_id)
+        friendprofile.setOnClickListener {
+            var intent = android.content.Intent(this, FriendProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+        var firendprofile2 = findViewById<RelativeLayout>(R.id.joshua_ki_post_name_n_id2)
+        firendprofile2.setOnClickListener {
+            var intent = android.content.Intent(this, FriendProfileActivity::class.java)
             startActivity(intent)
         }
 

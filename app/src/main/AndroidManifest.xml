@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I230553">
         <activity
+            android:name=".FinalStoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FinalStory"
+            android:exported="false" />
+        <activity
             android:name=".FriendProfileActivity"
             android:exported="false" />
         <activity
